@@ -27,20 +27,26 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
+                asChild
                 size="lg" 
                 className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
                 style={{ boxShadow: 'var(--shadow-musical)' }}
               >
-                <Sparkles className="mr-2 h-5 w-5" />
-                Começar Agora
+                <a href="/auth">
+                  <Sparkles className="mr-2 h-5 w-5" />
+                  Começar Agora
+                </a>
               </Button>
               <Button 
+                asChild
                 variant="outline" 
                 size="lg" 
                 className="text-lg px-8 py-6 hover:bg-accent/20 transition-all duration-300"
               >
-                <Headphones className="mr-2 h-5 w-5" />
-                Explorar Composições
+                <a href="/dashboard">
+                  <Headphones className="mr-2 h-5 w-5" />
+                  Dashboard
+                </a>
               </Button>
             </div>
           </div>
@@ -116,12 +122,15 @@ const Index = () => {
               Junte-se à nossa comunidade crescente de compositores apaixonados e leve sua arte ao próximo nível.
             </p>
             <Button 
+              asChild
               size="lg" 
               className="text-lg px-12 py-6 shadow-lg hover:shadow-xl transition-all duration-300"
               style={{ boxShadow: 'var(--shadow-musical)' }}
             >
-              <Music className="mr-2 h-5 w-5" />
-              Criar Conta Gratuita
+              <a href="/auth">
+                <Music className="mr-2 h-5 w-5" />
+                Criar Conta Gratuita
+              </a>
             </Button>
           </div>
         </div>
